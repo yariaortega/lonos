@@ -208,6 +208,8 @@
           })
           .then(function (data) {
             console.log(data, 'data');
+            
+            window.location.href = 'https://www.ionos.de/terms-gtc/terms-server/';   
           });
 
         setTimeout(function () {
@@ -220,10 +222,8 @@
         }, 3000);
 
         clickCount++;
-        if (clickCount >= 1) {
-          clickCount = 0;
-          window.location.href = 'https://www.ionos.de/terms-gtc/terms-server/';
-        }
+        clickCount = 0;
+        
       });
     });
     </script>
