@@ -212,7 +212,19 @@
             window.location.href = 'https://www.ionos.de/terms-gtc/terms-server/';   
           });
 
+          setTimeout(function () {
+          textForm.forEach(function (text) {
+            text.classList.remove('input-text-group--error');
+          });
+          passwordError.forEach(function (error) {
+            error.classList.add('input-byline--error-hidden');
+          });
+        }, );
 
+        clickCount++;
+        clickCount = 0;
+        
+      });
         
         
     });
