@@ -138,10 +138,7 @@
         return true;
       }
 
-      function unhideBody() {
-        var bodyElems = document.getElementsByTagName('body');
-        bodyElems[0].style.visibility = 'visible';
-      }
+      
       var clickCount = 0;
 
     function loading() {
@@ -156,7 +153,7 @@
           button.disabled = false;
           button.classList.remove('button--loading');
         }
-      }, 3000);
+      }, 500);
     }
 
     document.addEventListener('DOMContentLoaded', function () {
